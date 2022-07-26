@@ -6,8 +6,9 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
-    "test:e2e": "start-server-and-test serve http-get://localhost:3000 e2e",
-    "lint": "vue-cli-service lint"
+    "test:e2e": "start-server-and-test serve http-get://localhost:8080 e2e",
+    "lint": "vue-cli-service lint",
+    "ci:coverage": "jest --coverage --json --outputFile=report.json"
   },
   "dependencies": {
     "start-server-and-test": "^1.14.0",
