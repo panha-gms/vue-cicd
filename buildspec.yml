@@ -21,5 +21,5 @@ phases:
   post_build:
     commands:
       - echo PostBuild Phase
-      - aws s3 sync ./ $S3_BUCKET
+      - aws s3 sync ./dist $S3_BUCKET
  
