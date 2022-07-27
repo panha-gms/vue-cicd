@@ -6,8 +6,9 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
-    "ci": "start-server-and-test serve http://localhost:8080 e2e",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "e2e": "cypress run -- --record  --headless --browser chromium",
+    "test:e2e": "start-server-and-test serve http-get://localhost:3000 e2e"
   },
   "dependencies": {
     "start-server-and-test": "^1.14.0",
